@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "convert-qc-flags"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "BSD-3-Clause"
+keywords = []
+authors = [
+  { name = "Joshua Hampton", email = "joshua.hampton@ncas.ac.uk" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "netcdf4",
+  "numpy>=1,<2",
+]
+
+[project.urls]
+Documentation = "https://github.com/ncasuk/convert-qc-flags#readme"
+Issues = "https://github.com/ncasuk/convert-qc-flags/issues"
+Source = "https://github.com/ncasuk/convert-qc-flags"
+
+[tool.hatch.version]
+path = "src/convert_qc_flags/__about__.py"
